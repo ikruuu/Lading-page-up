@@ -139,10 +139,17 @@ section{
 .thumb li img{
     max-width: 60px;
 }
+.menu{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+}
 .container{
-    width: 100%;
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
 }
 .card{
     width: 100%;
