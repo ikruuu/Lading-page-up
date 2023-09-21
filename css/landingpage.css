@@ -89,3 +89,74 @@ section{
     padding-right: 50px;
     margin-top: 50px;
 }
+footer{
+    width: 100%;
+    color: #000;
+    border-top: solid 1px #023;
+}
+
+.footer_content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+.footer_contex h1{
+    margin-bottom: 0.75rem;
+}
+.social_media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    color: white;
+}
+.social_media .footer-link {
+    color: black;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+.footer_subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.input-footer{
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
+.input-footer input{
+    all: unset;
+    border: 1px solid black;
+    padding: 0.75rem;
+    width: 100%; 
+}
+.input-footer button{
+    margin-left: 10px;    
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0.75rem;
+    font-weight: 100;
+}
+.copy{
+    width: 100%;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .footer_content{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+@media screen and (max-width: 426px) {
+    .footer_content{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+}
