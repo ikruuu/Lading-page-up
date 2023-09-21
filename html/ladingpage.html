@@ -1,60 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documento</title>
     <link rel="stylesheet" href="../css/landingpage.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
+
 <body>
     <section>
         <div class="circle"></div>
-    <header class="nav">
-        <a href="#" class="logo"><img src="" alt="Logo" class="img__logo"></a>
-        <ul class="nav__list">
-            <li class="list__items"><a href="#" class="a">Home</a></li>
-            <li class="list__items"><a href="#" class="a">Cardápio</a></li>
-            <li class="list__items"><a href="#" class="a">Contato</a></li>
+        <header class="nav">
+            <a href="#" class="logo"><img src="" alt="Logo" class="img__logo"></a>
+            <ul class="nav__list">
+                <li class="list__items"><a href="#" class="a">Home</a></li>
+                <li class="list__items"><a href="#" class="a">Cardápio</a></li>
+                <li class="list__items"><a href="#" class="a">Contato</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="text__big">
+                <h2>It's not just Coffe</h2><br>
+                <h2>It's <span>Starbucks</span></h2>
+                <p class="text__small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aliquam condimentum elit risus, at accumsan enim finibus et. Pellentesque
+                    habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    Praesent at scelerisque turpis. In lacinia feugiat blandit. Suspendisse nec
+                    risus euismod, sodales urna id, dictum nulla. Vestibulum porttitor ullamcorper
+                    libero a volutpat. Etiam ut venenatis turpis. Aliquam eu erat est. Nulla sit amet
+                    vestibulum urna. Duis laoreet tortor enim, malesuada fermentum
+                </p>
+                <a href="#" class="learn__more">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="../images/img1.png" alt="" class="img__content">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li class="list__thumb"><img src="../images/thumb1.png" alt="" class="img__thumb"
+                    onclick="imageSlider('../images/img1.png')"></li>
+            <li class="list__thumb"><img src="../images/thumb2.png" alt="" class="img__thumb"
+                    onclick="imageSlider('../images/img3.png')"></li>
+            <li class="list__thumb"><img src="../images/thumb3.png" alt="" class="img__thumb"
+                    onclick="imageSlider('../images/img2.png')"></li>
         </ul>
-    </header>
 
-    <div class="content">
-        <div class="text__big"><h2>It's not just Coffe</h2><br><h2>It's <span>Starbucks</span></h2>
-        <p class="text__small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Aliquam condimentum elit risus, at accumsan enim finibus et. Pellentesque 
-            habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-            Praesent at scelerisque turpis. In lacinia feugiat blandit. Suspendisse nec 
-            risus euismod, sodales urna id, dictum nulla. Vestibulum porttitor ullamcorper 
-            libero a volutpat. Etiam ut venenatis turpis. Aliquam eu erat est. Nulla sit amet 
-            vestibulum urna. Duis laoreet tortor enim, malesuada fermentum
-        </p>
-        <a href="#" class="learn__more">Learn More</a>
-    </div>
-    <div class="imgBox">
-        <img src="../images/img1.png" alt="" class="img__content">
-    </div>
-    </div>
-    <ul class="thumb">
-        <li class="list__thumb"><img src="../images/thumb1.png" alt="" class="img__thumb" onclick="imageSlider('../images/img1.png')"></li>
-        <li class="list__thumb"><img src="../images/thumb2.png" alt="" class="img__thumb" onclick="imageSlider('../images/img3.png')"></li>
-        <li class="list__thumb"><img src="../images/thumb3.png" alt="" class="img__thumb" onclick="imageSlider('../images/img2.png')"></li>
-    </ul>
-
-    </section> 
+    </section>
 
 
     <section class="footer">
         <footer>
             <div class="footer_content">
-    
+
                 <div class="footer_contex">
-    
+
                     <h1>Logo</h1>
                     <p>é tudo sobre seus sonhos</p>
-    
+
                     <div class="social_media">
-    
+
                         <a href="#" class="instagram footer-link">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
@@ -64,11 +74,11 @@
                         <a href="#" class="whatsapp footer-link">
                             <i class="fa-brands fa-whatsapp"></i>
                         </a>
-    
+
                     </div>
-    
+
                 </div>
-    
+
                 <ul class="footer-list">
                     <li>
                         <h3>Blog</h3>
@@ -76,16 +86,16 @@
                     <li>
                         <a href="#" class="footer-link">Tecnologia</a>
                     </li>
-    
+
                     <li>
                         <a href="#" class="footer-link">Aventuras</a>
                     </li>
-    
+
                     <li>
                         <a href="#" class="footer-link">Serviços</a>
                     </li>
                 </ul>
-    
+
                 <ul class="footer-list">
                     <li>
                         <h3>Produtos</h3>
@@ -93,24 +103,24 @@
                     <li>
                         <a href="#" class="footer-link">Açai</a>
                     </li>
-    
+
                     <li>
                         <a href="#" class="footer-link">Sorvete</a>
                     </li>
-    
+
                     <li>
                         <a href="#" class="footer-link">Milkshake</a>
                     </li>
                 </ul>
-    
-    
+
+
                 <div class="footer_subscribe">
                     <h3>Subscribe</h3>
-    
+
                     <p>
                         Informe seu email para receber atualizações
                     </p>
-    
+
                     <div class="input-footer">
                         <input type="email" class="email">
                         <button>
@@ -119,14 +129,15 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="copy">
-                &#169 
+                &#169
                 2023 all rights reserved
             </div>
         </footer>
     </section>
- 
+
     <script src="../js/main.js"></script>
 </body>
+
 </html>
