@@ -16,6 +16,15 @@ section{
     align-items: center;
     background: #fff;
 }
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(700px at right 800px);
+}
 .nav{
     position: absolute;
     top: 0;
@@ -38,11 +47,27 @@ section{
     list-style: none;
 }
 .a{
+    position: relative;
     display: inline-block;
     color: #333;
     font-weight: 400;
     margin-left: 40px;
     text-decoration: none;
+    transition: 0.5s;
+}
+.a:hover::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #017143;
+}
+.a::before{
+    width: 0%;
+    content: "";
+    transition: 0.5s;
 }
 .content{
     margin-left: 8rem;
@@ -78,9 +103,14 @@ section{
     border-radius: 40px;
     font-weight: 500;
     text-decoration: none;
+    transition: 0.5s;
+}
+.learn__more:hover{
+    background-color: #06955a;
 }
 .img__content{
     margin-bottom: -105px;
+    max-width: 540px;
 }
 .imgBox{
     width: 600px;
@@ -88,6 +118,26 @@ section{
     justify-content: flex-end;
     padding-right: 50px;
     margin-top: 50px;
+}
+.thumb{
+    position: absolute;
+    left: 40%;
+    bottom: 15px;
+    transform: translateY(-50%);
+    display: flex;
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+.thumb li img{
+    max-width: 60px;
 }
 footer{
     width: 100%;
