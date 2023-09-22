@@ -14,7 +14,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #fff;
 }
 .circle{
     position: absolute;
@@ -37,18 +36,6 @@
     transition: 0.5s;
     transform: scaleX(-1);
 }
-.left__circle2{
-    position: absolute;
-    top: 69vh;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #017143;
-    clip-path: circle(200px at right 300px);
-    transition: 0.5s;
-    transform: scaleX(-1);
-    z-index: 999;
-}
 .nav{
     z-index: 100;
     background-color: #017143;
@@ -56,29 +43,21 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 10px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.nav .logo{
-    position: fixed;
-    top: 0;
-    max-width: 80px;
+    transition: .5s;
 }
 .img__logo{
-    position: relative;
-    top: 0;
     max-width: 60px;
+    display: flex;
 }
 .nav__list{
-    display: flex;
-    position: relative;   
-}
-.list__items{
+    display: flex; 
     list-style: none;
 }
-.a{
+.list__items{
     position: relative;
     display: inline-block;
     color: #fff;
@@ -94,7 +73,7 @@
     bottom: 0;
     width: 100%;
     height: 2px;
-    background-color: #017143;
+    background-color: #fff;
 }
 .a::before{
     width: 0%;

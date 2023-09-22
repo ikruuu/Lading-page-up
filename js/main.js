@@ -8,6 +8,6 @@ function changeCircleColor(color){
     starbucks.style.color = color;
     const learn__more = document.querySelector('.learn__more');
     learn__more.style.background = color;
-    const left__circle2 = document.querySelector('.left__circle2');
-    left__circle2.style.background = color;
+    const nav = document.querySelector('.nav');
+    nav.style.background = color;
 }
