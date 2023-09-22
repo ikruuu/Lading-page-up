@@ -174,6 +174,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 100px;
+    margin-top: 200px;
 }
 .container{
     width: 90%;
@@ -291,5 +292,83 @@ footer{
     .footer_content{
         grid-template-columns: repeat(1, 1fr);
         gap: 2rem;
+    }
+}@media(max-width: 1385px){
+    .nav{
+        padding: 20px;
+    }
+    .logo{
+        max-width: 60px;
+    }
+    .nav ul{
+        display: none;
+    }
+    section{
+        padding: 20px 20px 20px;
+    }
+    .circle{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        clip-path: circle(400px at center bottom);
+    }
+    .content{
+        flex-direction: column;
+        margin-top: 100px;
+        margin-left: -5rem;
+    }
+    .content .text__big h2{
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+    .content .text__big{
+        max-width: 100%;
+    }
+    .content .imgBox{
+        width: 100%;
+        justify-content: center;
+    }
+    .content .imgBox img{
+        max-width: 250px;
+    }
+    .imgBox{
+        margin-top: 10px;
+    }
+    .thumb li img{
+        max-width: 40px;
+    }
+    .thumb{
+        margin-left: 11rem;
+    }
+    .left__circle2{
+        display: none;
+    }
+    .toggle{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url(menu.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: invert(1);
+
+    }
+@media(max-width: 821px){
+        .circle{
+            clip-path: circle(300px at center bottom);
+        }
+        .thumb{
+            margin-left: 8rem;
+        }
+    }
+}
+@media(max-width: 617px){
+    .thumb{
+        bottom: -12rem;
+        left: 0rem;
     }
 }
