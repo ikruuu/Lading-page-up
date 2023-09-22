@@ -184,7 +184,7 @@
     align-items: center;
     flex-direction: column;
     gap: 100px;
-    margin-top: 250px;
+    margin-top: 120px;
 }
 .menu h1{
     text-align: center;
@@ -309,6 +309,9 @@ footer{
         gap: 2rem;
     }
 }@media(max-width: 1385px){
+    .menu{
+        margin-top: 250px;
+    }
     .nav{
         padding: 20px;
     }
