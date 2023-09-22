@@ -51,18 +51,25 @@
 }
 .nav{
     z-index: 100;
+    background-color: #017143;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 30px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .nav .logo{
-    position: relative;
+    position: fixed;
+    top: 0;
     max-width: 80px;
+}
+.img__logo{
+    position: relative;
+    top: 0;
+    max-width: 60px;
 }
 .nav__list{
     display: flex;
@@ -74,7 +81,7 @@
 .a{
     position: relative;
     display: inline-block;
-    color: #333;
+    color: #fff;
     font-weight: 400;
     margin-left: 40px;
     text-decoration: none;
@@ -95,6 +102,7 @@
     transition: 0.5s;
 }
 .content{
+    margin-top: 4rem;
     margin-left: 8rem;
     position: relative;
     width: 100%;
@@ -147,11 +155,13 @@
     margin-top: 50px;
 }
 .thumb{
+    width: 100%;
     position: absolute;
-    left: 40%;
     bottom: 15px;
     transform: translateY(-50%);
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .thumb li{
     list-style: none;
@@ -171,10 +181,13 @@
 
 .menu{
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 100px;
     margin-top: 200px;
+}
+.menu h1{
+    text-align: center;
 }
 .container{
     width: 90%;
@@ -196,12 +209,14 @@
 /* Footer */ 
 
 footer{
-    margin-top: 30px;
+    margin-top: 100px;
     width: 100%;
     color: #000;
     border-top: solid 1px #023;
 }
-
+.imageFooter{
+    max-width: 80px;
+}
 .footer_content{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -272,7 +287,7 @@ footer{
     text-align: center;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 980px) {
     .container{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -340,7 +355,7 @@ footer{
         max-width: 40px;
     }
     .thumb{
-        margin-left: 11rem;
+        bottom: -170px;
     }
     .left__circle2{
         display: none;
@@ -355,14 +370,13 @@ footer{
         background-position: center;
         background-repeat: no-repeat;
         filter: invert(1);
-
     }
-@media(max-width: 821px){
+@media(max-width: 940px){
         .circle{
             clip-path: circle(300px at center bottom);
         }
-        .thumb{
-            margin-left: 8rem;
+        .imgBox{
+            margin-top: 100px;
         }
     }
 }
