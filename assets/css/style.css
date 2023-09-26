@@ -362,6 +362,27 @@ footer{
     .hamburguer.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
+    .home{
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        padding: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header{
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fddd86;
+    }
     .header_list{
         position: fixed;
         left: -100%;
