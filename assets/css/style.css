@@ -155,8 +155,10 @@ header .logo{
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 100px;
+    gap: 50px;
     margin-top: 120px;
+    background-color: #80808010;
+    padding: 30px;
 }
 .menu h1{
     text-align: center;
@@ -168,14 +170,41 @@ header .logo{
     gap: 100px;
 }
 .card{
+    border-radius: 8px;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    background-color: #fff;
+}
+.card .title{
+    color: #fff;
+    font-size: 1.3em;
+    margin-left: 10px;
+    position: absolute;
+    margin-top: -5rem;
+}
+.card .infos{
+    margin-left: 10px;
+}
+.productPrice{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 .menu_images{
-    width: 130px;
-    height: 131px;
+    position: relative;
+    max-width: 100%;
+    max-height: 70%;
+    object-fit: cover;
+    border-radius: 8px 8px 0px 0px;
+}
+.productPrice h4{
+    color: #C5C5C5;
+}
+.productPrice h3{
+    color: #F4ADA5;
 }
 
 /* Footer */ 
@@ -272,12 +301,19 @@ footer{
     .container{
         grid-template-columns: repeat(1, 1fr);
     }
-    
+    .card .title{
+        margin-top: -8rem;
+    }
 }
 @media screen and (max-width: 426px) {
     .footer_content{
         grid-template-columns: repeat(1, 1fr);
         gap: 2rem;
+    }
+}
+@media screen and (max-width: 500px){
+    .card .title{
+        margin-top: -6rem;
     }
 }
 @media (max-width: 991px){
@@ -292,7 +328,7 @@ footer{
     }
     .content{
         flex-direction: column;
-        margin-top: 100px;
+        margin-top: 50px;
     }
     .textBox{
         max-width: 100%;
