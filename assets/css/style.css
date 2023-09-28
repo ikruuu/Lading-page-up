@@ -191,20 +191,21 @@ header .logo{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
     padding: 0 20px;
 }
 .menu_images{
     position: relative;
     max-width: 100%;
-    max-height: 70%;
+    max-height: 60%;
     object-fit: cover;
     border-radius: 8px 8px 0px 0px;
 }
 .productPrice h4{
     color: #C5C5C5;
 }
-.productPrice h3{
-    color: #F4ADA5;
+.productPrice h1{
+    color: #CE6D4F;
 }
 
 /* Footer */ 
@@ -313,18 +314,51 @@ footer{
 }
 @media screen and (max-width: 500px){
     .card .title{
-        margin-top: -6rem;
+        margin-top: -5rem;
     }
 }
 @media (max-width: 991px){
-    header{
-        padding: 0px 20px 0px;
-    }
     header .logo{
         max-width: 60px;
     }
+    header{
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fddd86;
+    }
+    .header_list{
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+        background-color: #fddd86;
+        z-index: 100;
+    }
+    .header_list li{
+        margin: 16px 0;
+    }
+    .header_list.active{
+        left: 0;
+    }
     .home{
+        position: relative;
+        width: 100%;
         padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     .content{
         flex-direction: column;
@@ -361,45 +395,5 @@ footer{
     }
     .hamburguer.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
-    }
-    .home{
-        position: relative;
-        width: 100%;
-        min-height: 100vh;
-        padding: 100px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    header{
-        position: fixed;
-        z-index: 100;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 0px 100px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #fddd86;
-    }
-    .header_list{
-        position: fixed;
-        left: -100%;
-        top: 60px;
-        gap: 0;
-        border-radius: 0 0 20px 20px;
-        text-align: center;
-        flex-direction: column;
-        width: 100%;
-        transition: 0.3s;
-        background-color: #fddd86;
-        z-index: 100;
-    }
-    .header_list li{
-        margin: 16px 0;
-    }
-    .header_list.active{
-        left: 0;
     }
 }
