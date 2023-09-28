@@ -29,23 +29,23 @@
 
 
       <ul class="header_list">
-        <li><a href="#" class="a">Home</a></li>
-        <li><a href="#" class="a">Espaços</a></li>
-        <li><a href="#" class="a">Cardápio</a></li>
-        <li><a href="#" class="a">Contatos</a></li>
+        <li><a href="#content" class="a" onclick="Animation()">Home</a></li>
+        <li><a href="#cards" class="a" onclick="Animation()">Espaços</a></li>
+        <li><a href="#menu" class="a" onclick="Animation()">Cardápio</a></li>
+        <li><a href="#footer" class="a" onclick="Animation()">Contatos</a></li>
       </ul>
 
-      <div class="hamburguer">
+      <div class="hamburguer" onclick="Animation()">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
     </header>
 
-    <div class="content">
+    <div class="content" id="content">
 
       <div class="textBox">
-        <h2>Não é somente MilkShake<br>é a <span class="UpMilkShake">Milkshake<strong>UP</strong></span></h2>
+        <h2>Não é somente MilkShake é a <span class="UpMilkShake">Milkshake<strong>UP</strong></span></h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint enim ipsa ab, voluptates suscipit incidunt
           maiores dolores adipisci sapiente consequatur aliquid! Repellendus possimus modi maiores quaerat velit magnam
           quae pariatur?</p>
@@ -70,7 +70,7 @@
 
 
    
-<section class="cards">
+<section class="cards" id="cards">
     <h2 class="card__title">Conheça nosso Espaço</h2>
     
     <!-- Slider main container -->
@@ -100,7 +100,7 @@
         
 </section>
 
-  <section class="menu">
+  <section class="menu" id="menu">
 
     <h1>Cardápio</h1>
     <div class="container">
@@ -200,7 +200,7 @@
   </section>
 
 
-  <section class="footer">
+  <section class="footer" id="footer">
     <footer>
       <div class="footer_content">
 

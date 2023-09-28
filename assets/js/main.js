@@ -6,13 +6,16 @@ function changeCircleColor(color){
     circle.style.background = color;
 }
 
-const menu = document.querySelector('.hamburguer');
-const nav_menu = document.querySelector('.header_list')
 
-menu.addEventListener('click', () =>{
-    menu.classList.toggle('active');
-    nav_menu.classList.toggle('active')
-})
+
+function Animation(){
+  const link = document.querySelector('.a')
+  const menu = document.querySelector('.hamburguer');
+  const nav_menu = document.querySelector('.header_list')
+  menu.classList.toggle('active');
+  nav_menu.classList.toggle('active')
+  link.classList.toggle('active')
+}
 
 // Swiper 
 
