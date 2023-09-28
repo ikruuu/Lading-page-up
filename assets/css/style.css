@@ -42,6 +42,7 @@ header .logo{
     display: inline-block;
     color: #333;
     font-weight: 400;
+    position: relative;
 }
 .hamburguer{
     display: none;
@@ -247,10 +248,11 @@ header .logo{
     border-radius: 8px 8px 0px 0px;
 }
 .productPrice h4{
-    color: #C5C5C5;
+    color: #000;
+    font-weight: bold;
 }
 .productPrice h1{
-    color: #CE6D4F;
+    color: tomato;
 }
 
 /* Footer */ 

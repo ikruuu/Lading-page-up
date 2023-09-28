@@ -4,8 +4,6 @@ function imageSlider(anything){
 function changeCircleColor(color){
     const circle = document.querySelector('.circle');
     circle.style.background = color;
-    const card__container = document.querySelector('.card__container')
-    card__container.style.background = color
 }
 
 const menu = document.querySelector('.hamburguer');
