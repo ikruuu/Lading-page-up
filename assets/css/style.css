@@ -148,6 +148,51 @@ header .logo{
     clip-path: circle(600px at right 800px);
 }
 
+ /* Cards Espaço UP */
+ 
+ .cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 80px;
+}
+.card__space{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card__container{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    border-radius: 10px;
+    display: grid;
+    gap: 40px;
+    width: 100%;
+}
+.card__title{
+    color: #000;
+}
+.card__image{
+    background-color: transparent;
+    border-radius: 10px;
+}
+.card__image img{
+    width: 850px;
+    height: 500px;
+    padding: 50px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-sizing: content-box;
+}
+.preview__button{
+    background-color: #017143;
+}
+
+
 
 /* Menu cardápio*/
 
@@ -182,7 +227,7 @@ header .logo{
     font-size: 1.3em;
     margin-left: 10px;
     position: absolute;
-    margin-top: -5rem;
+    margin-top: -6rem;
 }
 .card .infos{
     margin-left: 10px;
@@ -196,7 +241,7 @@ header .logo{
 }
 .menu_images{
     position: relative;
-    max-width: 100%;
+    width: 100%;
     max-height: 60%;
     object-fit: cover;
     border-radius: 8px 8px 0px 0px;
@@ -288,11 +333,21 @@ footer{
     width: 100%;
     text-align: center;
 }
+@media screen and (max-width: 1150px){
+    .card .title{
+        margin-top: -3rem;
+    }
+}
 @media screen and (max-width: 980px) {
     .container{
         grid-template-columns: repeat(2, 1fr);
     }
-    
+    .card__image img{
+        object-fit: contain;
+    }
+    .card .title{
+        margin-top: -4rem;
+    }
 }
 @media screen and (max-width: 768px) {
     .footer_content{
@@ -305,6 +360,10 @@ footer{
     .card .title{
         margin-top: -8rem;
     }
+    .card__container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
 @media screen and (max-width: 426px) {
     .footer_content{

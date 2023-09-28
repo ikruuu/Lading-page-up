@@ -4,6 +4,8 @@ function imageSlider(anything){
 function changeCircleColor(color){
     const circle = document.querySelector('.circle');
     circle.style.background = color;
+    const card__container = document.querySelector('.card__container')
+    card__container.style.background = color
 }
 
 const menu = document.querySelector('.hamburguer');
@@ -13,3 +15,23 @@ menu.addEventListener('click', () =>{
     menu.classList.toggle('active');
     nav_menu.classList.toggle('active')
 })
+
+// Swiper 
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+  });

@@ -12,6 +12,10 @@
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
 
 </head>
 
@@ -41,7 +45,7 @@
     <div class="content">
 
       <div class="textBox">
-        <h2>Não é somente MilkShake<br>è a <span class="UpMilkShake">Milkshake<strong>UP</strong></span></h2>
+        <h2>Não é somente MilkShake<br>é a <span class="UpMilkShake">Milkshake<strong>UP</strong></span></h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint enim ipsa ab, voluptates suscipit incidunt
           maiores dolores adipisci sapiente consequatur aliquid! Repellendus possimus modi maiores quaerat velit magnam
           quae pariatur?</p>
@@ -63,6 +67,38 @@
           onclick="imageSlider('assets/images/img3.png'); changeCircleColor('#d752b1');"></li>
     </ul>
   </section>
+
+
+   
+<section class="cards">
+    <h2 class="card__title">Conheça nosso Espaço</h2>
+    
+    <!-- Slider main container -->
+    
+    <div class="card__space">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><div class="card__container">
+            <div class="card__image"><img src="/assets/images/cenarioUp02.jpeg" alt="" srcset=""></div>
+          </div></div>
+          <div class="swiper-slide"><div class="card__container">
+            <div class="card__image"><img src="/assets/images/cenarioUp03.jpeg" alt="" srcset=""></div>
+          </div></div>
+          <div class="swiper-slide"><div class="card__container">
+            <div class="card__image"><img src="/assets/images/cenarioUp04.jpeg" alt="" srcset=""></div>
+          </div></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        
+</section>
 
   <section class="menu">
 
@@ -247,6 +283,7 @@
     </footer>
   </section>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 
