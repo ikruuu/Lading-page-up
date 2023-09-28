@@ -19,7 +19,7 @@
     align-items: center;
 }
 header{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -28,6 +28,7 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: #fddd86;
+    z-index: 100;
 }
 header .logo{
     position: relative;
@@ -335,8 +336,18 @@ footer{
     font-weight: 100;
 }
 .copy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
     text-align: center;
+    gap: 6px;
+    font-size: 0.8em;
+    padding: 1px;
+}
+.copy img{
+    max-width: 70px;
 }
 @media screen and (max-width: 1150px){
     .card .title{
@@ -386,7 +397,6 @@ footer{
         max-width: 60px;
     }
     header{
-        position: fixed;
         z-index: 100;
         top: 0;
         left: 0;
