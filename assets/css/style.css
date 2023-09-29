@@ -155,7 +155,7 @@ header .logo{
 
  /* Cards Espaço UP */
  
- .cards{
+ .slider{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -163,13 +163,13 @@ header .logo{
     gap: 40px;
     margin-top: 80px;
 }
-.card__space{
+.slider__space{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.card__container{
+.slider__container{
     display: flex;
     justify-content: center;
     padding: 50px;
@@ -178,14 +178,14 @@ header .logo{
     gap: 40px;
     width: 100%;
 }
-.card__title{
+.slider__title{
     color: #000;
 }
-.card__image{
+.slider__image{
     background-color: transparent;
     border-radius: 10px;
 }
-.card__image img{
+.slider__image img{
     width: 850px;
     height: 500px;
     padding: 50px;
