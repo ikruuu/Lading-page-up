@@ -120,7 +120,7 @@ header .logo{
     margin-top: 50px;
 }
 .imageBox img{
-    max-width: 340px;
+    max-width: 400px;
 }
 .thumbnails{
     position: absolute;
@@ -446,12 +446,14 @@ footer{
     .imageBox{
         max-width: 100%;
         justify-content: center;
+        align-items: center;
     }
     .imageBox img{
         max-width: 300px;
+        margin-left: 60px;
     }
     .thumbnails li img{
-        max-width: 40px;
+        max-width: 50px;
     }
     .hamburguer{
         display: block;
