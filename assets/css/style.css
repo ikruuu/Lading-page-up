@@ -18,6 +18,7 @@
     justify-content: space-between;
     align-items: center;
 }
+/* Nav */
 header{
     position: fixed;
     top: 0;
@@ -74,6 +75,7 @@ header .logo{
     content: "";
     transition: 0.5s;
 }
+/* Content */
 .content{
     position: relative;
     width: 100%;
@@ -349,6 +351,7 @@ footer{
 .copy img{
     max-width: 70px;
 }
+/* Media querys */
 @media screen and (max-width: 1150px){
     .card .title{
         margin-top: -6rem;

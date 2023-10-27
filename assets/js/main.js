@@ -1,3 +1,4 @@
+// Mudar imagem e cor do círculo
 function imageSlider(anything){
     document.querySelector('.UpImage').src = anything;
 }
@@ -7,7 +8,7 @@ function changeCircleColor(color){
 }
 
 
-
+// Menu hamburger
 function Animation(){
   const link = document.querySelector('.a')
   const menu = document.querySelector('.hamburguer');
@@ -18,7 +19,6 @@ function Animation(){
 }
 
 // Swiper 
-
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
