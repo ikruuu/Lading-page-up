@@ -152,8 +152,11 @@ header .logo{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #B80964;
+    background-color: #9E4B30;
     clip-path: circle(600px at right 800px);
+}
+.image__circle{
+    width: 200px;
 }
 
  /* Cards Espaço UP */
