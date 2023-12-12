@@ -199,6 +199,7 @@ header .logo{
     border-radius: 10px;
     box-sizing: content-box;
 }
+
 /* Menu cardápio*/
 
 .menu{
@@ -223,7 +224,7 @@ header .logo{
 }
 .card{
     border-radius: 8px;
-    max-width: 400px;
+    max-width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -260,7 +261,10 @@ header .logo{
 .productPrice h1{
     color: rgb(238, 40, 5);
 }
-
+.cards--coment{
+    width: 100%;
+    padding: 30px;
+}
 /* Footer */ 
 
 footer{
@@ -357,6 +361,9 @@ footer{
     .card .title{
         margin-top: -6rem;
     }
+    .slider__image2{
+        padding-left: 20px;
+}
 }
 @media screen and (max-width: 980px) {
     .container{
@@ -369,7 +376,7 @@ footer{
         margin-top: -8rem;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
     .footer_content{
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
@@ -383,12 +390,18 @@ footer{
     .slider__container{
         grid-template-columns: repeat(1, 1fr);
     }
+    .slider__image2{
+        padding-left: 90px;
+    }
 
 }
 @media screen and (max-width: 470px) {
     .footer_content{
         grid-template-columns: repeat(1, 1fr);
         gap: 2rem;
+    }
+    .slider__image2{
+        padding-left: 5px;
     }
 }
 @media screen and (max-width: 500px){

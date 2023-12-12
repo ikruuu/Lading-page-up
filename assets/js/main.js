@@ -21,6 +21,7 @@ function Animation(){
 // Swiper 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
+    grabCursor: true,
     direction: 'horizontal',
     loop: true,
     centeredSlides: true,
